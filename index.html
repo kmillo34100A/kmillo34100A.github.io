@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="global">
+   <!--logo, principal, lateral, footer--> 
+    <header>
+
+            <img  class="logo-small" src="/imagenes/Group 3.svg" alt="logo-alura" >
+            <img class="logo" src="imagenes/Logo.svg" alt="logo-alura">
+
+    </header>
+
+    <main class="main">
+        <div class="principal">
+            <textarea class="textarea" name="texto" id="texto" cols="30" rows="10" placeholder="ingrese el texto aqui" ></textarea>
+            <p class="advertencia">Solo letras minusculas y sin acentos</p>
+            <div class="btn-display">
+                <button id="btnEncriptar" class="btn-encriptar" onclick="encriptadora()">Encriptar</button>
+                <button id="btnDesencriptar"  class="btn-desencriptar" onclick="desencriptadora()">Desencriptar</button>    
+            </div>
+
+        </div>
+        <div  class="lateral">
+            <div id="sin"  class="aside">
+                <img class="muñeco" src="imagenes/Muñeco.svg" alt="muñeco">
+                <p class="mensaje-1" id="mensaje">Ningun mensaje fue encontrado</p>
+                <p class="mensaje-2" > ingresa el texto que deseas encriptar o desencriptar</p>    
+            </div>
+            <div id="con" class="con-contenido">    
+                <textarea class="mensaje" name="mensaje" id="id" cols="30" rows="10"></textarea>
+                <button id="btn-copiar"  class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+            <div class="background">
+                <p>¡¡Copiado con Exito!!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+        <p>&copy;copyright-2023 Todos los derechos reservados -
+        Desarrollado por Camilo Pérez  </p> 
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/camilo-p%C3%A9rez-it" target="_blank" ><img class="icon" src="/imagenes/icons8-linkedin.svg" alt="linkedin-icon"></a><a href="https://github.com/kmillo34100A/Encriptador-.git " target="_blank"><img class="icon" src="/imagenes/icons8-github.svg" alt="github-icon"></a>
+        </div>
+
+    <script src="/script.js">
+// descripcion
+// La letra "e" es convertida para "enter"
+// La letra "i" es convertida para "imes"
+// La letra "a" es convertida para "ai"
+// La letra "o" es convertida para "ober"
+// La letra "u" es convertida para "ufat"
+        
+    </script>
+    
+</body>
+</html>
